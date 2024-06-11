@@ -58,10 +58,10 @@ open class ModeSwitcher {
                     "外部来源"
                 }
                 "SOURCE_SCENE_CONSERVATIVE" -> {
-                    "Scene-经典"
+                    "Sunshine-经典(Scene调度)"
                 }
                 "SOURCE_SCENE_ACTIVE" -> {
-                    "Scene-性能"
+                    "Sunshine-性能(Scene调度)"
                 }
                 "SOURCE_SCENE_CUSTOM" -> {
                     "自定义"
@@ -81,7 +81,7 @@ open class ModeSwitcher {
             })
         }
 
-        // 是否已经完成内置配置文件的自动更新（如果使用的是Scene自带的配置，每次切换调度前，先安装配置）
+        // 是否已经完成内置配置文件的自动更新（如果使用的是Sunshine自带的配置，每次切换调度前，先安装配置）
         private var innerConfigUpdated = false
 
         const val OUTSIDE_POWER_CFG_PATH = "/data/powercfg.sh"
