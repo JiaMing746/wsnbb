@@ -147,14 +147,6 @@ class ActivityStartSplash : Activity() {
         }
     }
 
-    private class InstallBusybox(private val context: ActivityStartSplash) : Runnable {
-        override fun run() {
-            context.start_state_text.text = "检查Busybox是否安装..."
-            Busybox(context).forceInstall {
-                context.startToFinish()
-            }
-        }
-
     }
 
     private fun checkPermission(permission: String): Boolean = PermissionChecker.checkSelfPermission(this.applicationContext, permission) == PermissionChecker.PERMISSION_GRANTED
