@@ -10313,7 +10313,7 @@ var _default = {
       },
       appRecommend: [{
         appName: 'Scene 高级设定',
-        desc: 'Scene 场景模式 - 高级设定所需的额外组件，如果自动安装失败，请手动下载安装，并允许自启动~',
+        desc: 'Sunshine 场景模式 - 高级设定所需的额外组件，如果自动安装失败，请手动下载安装，并允许自启动~',
         downloadUrl: 'http://atools.oss-cn-shenzhen.aliyuncs.com/app1/Scene%20-%20%E9%AB%98%E7%BA%A7%E8%AE%BE%E5%AE%9A_1.0.7%20scene.apk'
       }, {
         appName: '微插件 独立版',
@@ -10637,7 +10637,7 @@ var staticRenderFns = [
       ),
       _c("br"),
       _vm._v(
-        "\n      需要在无障碍中开启“Scene - 场景模式”，并允许Scene自启动和保持后台。\n    "
+        "\n      需要在无障碍中开启“Sunshine - 场景模式”，并允许Sunshine自启动和保持后台。\n    "
       )
     ])
   },
@@ -11007,4 +11007,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["C:/Users/helloklf/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","src/main.js"], null)
-//# sourceMappingURL=/main.1e43358e.js.map
+//# sourceMappingURL=/main.1e43358e.js.
