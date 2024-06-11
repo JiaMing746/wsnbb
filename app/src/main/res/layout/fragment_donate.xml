@@ -12,6 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+            <TextView
+                style="@style/textSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="讨论、分享" />
+                
             <LinearLayout
                 android:id="@+id/pay_alipay"
                 android:layout_marginTop="10dp"
