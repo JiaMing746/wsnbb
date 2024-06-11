@@ -10,12 +10,12 @@ import java.io.File;
 public class MagiskExtend {
     // source /data/adb/util_functions.sh
 
-    public static String MAGISK_PATH = "/sbin/.core/img/scene_systemless/";
+    public static String MAGISK_PATH = "/sbin/.core/img/Sunshine_systemless/";
     private static String MAGISK_PATH_19 = "/data/adb/modules"; //  "/sbin/.magisk/modules";
     private static String MAGISK_ROOT_PATH1 = "/sbin/.core/img";
     private static String MAGISK_ROOT_PATH2 = "/sbin/.magisk/img";
 
-    private static String MAGISK_MODULE_NAME = "scene_systemless";
+    private static String MAGISK_MODULE_NAME = "Sunshine_systemless";
     //magisk 19 /data/adb/modules
     private static int supported = -1;
     private static int MagiskVersion = 0;
@@ -66,8 +66,8 @@ public class MagiskExtend {
                     "name=" + moduleTitle + "\\n" +
                     "version=v1\\n" +
                     "versionCode=1\\n" +
-                    "author=嘟嘟ski\\n" +
-                    "description=用于将第三方应用转换成系统应用的模块，由Scene创建并添加\n" +
+                    "author=Sunshine\\n" +
+                    "description=用于将第三方应用转换成系统应用的模块，由Sunshine创建并添加\n" +
                     "minMagisk=17000\\n";
 
             if (MagiskVersion < 19) {
@@ -127,12 +127,12 @@ public class MagiskExtend {
     }
 
     public static void magiskModuleInstall(Context context) {
-        String moduleProp = "id=scene_systemless\n" +
-                "name=Scene的附加模块\n" +
+        String moduleProp = "id=Sunshine_systemless\n" +
+                "name=Sunshine的附加模块\n" +
                 "version=v1\n" +
                 "versionCode=1\n" +
-                "author=嘟嘟ski\n" +
-                "description=Scene提供的Magisk拓展模块，从而在不修改系统文件的情况下，更改一些参数\n" +
+                "author=Sunshine\n" +
+                "description=Sunshine提供的Magisk拓展模块，从而在不修改系统文件的情况下，更改一些参数\n" +
                 "minMagisk=17000\n";
         String systemProp = "# This file will be read by resetprop\n" +
                 "# 示例: 更改 dpi\n" +
@@ -170,7 +170,7 @@ public class MagiskExtend {
             writeModuleFile("", "auto_mount", context);
             writeModuleFile("", "update", context);
 
-            MAGISK_PATH = "/data/adb/magisk_merge_tmnt/scene_systemless/";
+            MAGISK_PATH = "/data/adb/magisk_merge_tmnt/Sunshine_systemless/";
             writeModuleFile("", "auto_mount", context);
         } else {
             writeModuleFile("", "update", context);
