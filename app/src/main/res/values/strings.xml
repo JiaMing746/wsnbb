@@ -45,8 +45,8 @@
     <string name="share_link">你也来试试Scene吧，我觉得还不错，下载地址：\n http://mteams.mteamstoolbox.top:16666/</string>
     <!--<string name="feedback_link">mqqwpa://im/chat?chat_type=wpa&amp;uin=1191634433</string>-->
 
-    <string name="app_name">Scene5 Alpha</string>
-    <string name="app_name_short">Scene5</string>
+    <string name="app_name">Sunshine</string>
+    <string name="app_name_short">Sunshine</string>
     <string name="app_name_mode_switch">Scene-快速切换模式</string>
 
     <string name="backup_action_title_boot">导出Boot</string>
@@ -443,7 +443,13 @@
     <string name="scene_reset_compile">com.Sunshine.ToolBox.ResetCompile</string>
 
     <string name="scene_contract_title">风险声明</string>
-    <string name="scene_contract">Scene是一款面向玩机爱好者的应用，使用它需要拥有优秀的视力、阅读理解能力和良好的心态。\n\n使用过程中可能出现无法预料的错误，导致数据丢失，甚至无法正常开机。\n请务必不要在你[用于工作]或者存有[重要数据]的手机上使用，以免造成损失！\n\n根据用户以往反馈，在以下厂商的机型上使用本软件，很可能丢失数据甚至无法开机：\nMeizu、LG、Google Pixel\n\n使用过程中，务必仔细阅读提示信息谨慎操作，不要轻易拨动不理解的功能选项！\n\n此外，本应用作者不保证会提供使用帮助和故障恢复建议！</string>
+    <string name="scene_contract">"本软件基于嘟嘟斯基｜开源的〖Scene5〗框架制作，其可作为日常使用，在无法修改系统某些参数的情况下，可对 系统 进行的更改或功能的扩展。
+【关于使用】
+ （1）用户在使用本软件前，必需要先获得同意后，才可运行
+ （2）在ROOT模式下，Sunshine.ToolBox提供的所有功能都可以被访问，其中也包括一些具有一定危险性的功能。例如：删除出厂自带应用、控制处理器性能、写入或还原系统文件。
+ （3）使用过程中可能会因为操作不当或功能缺陷，导致你无法进入系统界面，或者丢失重要数据。如果你从未听说过刷机、变砖、恢复出厂设置，并且没有备用设备，该模式可能并不适于你！
+ （4）如您愿意接受这些风险，使用时请务必小心谨慎，认真阅读各个功能提示警示信息，不要轻易触动不理解的功能按钮开关！务必不要在你[用于工作]或存有[重要数据]的手机上使用ROOT模式，以免造成无法挽回的损失！
+ （5）Sunshine可能会偶尔收集设备型号、设备厂家、设备ID信息、 硬件配置参数、性能统计、温控配置等数据，用于改进适配情况！ "</string>    
     <string name="permission_float">请先为Scene授权显示悬浮窗权限！</string>
     <string name="lmk_optimize_desc">让Scene根据你的RAM容量，自动调整LMK参数，从而增强后台能力（可能导致低内存时卡顿）。如需恢复，请关闭该选项重启手机，如需开机后自动设置，请允许工具箱自启动</string>
     <string name="lmk_optimize">低内存优化</string>
@@ -490,7 +496,7 @@
     <string name="magisk_install_title">Scene附加模块</string>
     <string name="cache_recycle">回收缓存</string>
     <string name="dynamic_auto_disabled">未检测到配置文件，已自动禁用动态响应！</string>
-    <string name="app_donate">打赏</string>
+    <string name="app_donate">交流</string>
     <string name="app_nav">功能</string>
     <string name="app_home">概览</string>
     <string name="app_tuner">调节</string>
