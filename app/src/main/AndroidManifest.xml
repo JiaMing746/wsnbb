@@ -160,7 +160,7 @@
             android:name=".activities.ActivityOtherSettings"
             android:configChanges="keyboardHidden|orientation|uiMode"
             android:excludeFromRecents="true"
-            android:label="Scene 杂项设置"
+            android:label="Sunshine 杂项设置"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <activity
@@ -331,7 +331,7 @@
 
         <service
             android:name=".AccessibilityScenceMode"
-            android:label="Scene - 场景模式"
+            android:label="Sunshine - 场景模式"
             android:configChanges="orientation|screenLayout|fontScale|smallestScreenSize|density|screenSize"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
