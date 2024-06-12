@@ -46,6 +46,7 @@ class CpuConfigInstaller {
             }
             // 工具函数
             FileWrite.writePrivateShellFile(dir + "/powercfg-utils.sh", "powercfg-utils.sh", context)
+            FileWrite.writePrivateShellFile(dir + "/powercfg-auto.sh", "powercfg-auto.sh", context)
 
             if (powercfg == null) {
                 return false
