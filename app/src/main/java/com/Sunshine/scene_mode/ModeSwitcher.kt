@@ -58,10 +58,10 @@ open class ModeSwitcher {
                     "外部来源"
                 }
                 "SOURCE_SCENE_CONSERVATIVE" -> {
-                    "Sunshine-经典(Scene调度)"
+                    "Sunshine-经典"
                 }
                 "SOURCE_SCENE_ACTIVE" -> {
-                    "Sunshine-性能(Scene调度)"
+                    "Sunshine-性能"
                 }
                 "SOURCE_SCENE_CUSTOM" -> {
                     "自定义"
