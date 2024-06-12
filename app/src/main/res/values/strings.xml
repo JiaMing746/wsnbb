@@ -541,8 +541,8 @@
     <!--配置源-->
     <string name="source_uperf">外部来源(Uperf)</string>
     <string name="source_outside">外部来源</string>
-    <string name="source_classics">Sunshine-经典(Scene调度)</string>
-    <string name="source_perf">Sunshine-性能(Scene调度)</string>
+    <string name="source_classics">Sunshine-经典</string>
+    <string name="source_perf">Sunshine-性能</string>
     <string name="source_undefined">未定义</string>
     <string name="source_unknown">未知</string>
     <string name="source_author">配置源/作者：</string>
