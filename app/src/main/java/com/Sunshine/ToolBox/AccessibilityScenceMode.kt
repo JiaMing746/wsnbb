@@ -361,7 +361,7 @@ public class AccessibilityScenceMode : AccessibilityService(), IEventReceiver {
 
                 val logs = if (floatLogView == null) null else StringBuilder()
                 logs?.run {
-                    append("Scene窗口检测\n", "屏幕: ${displayHeight}x${displayWidth}")
+                    append("Sunshine窗口检测\n", "屏幕: ${displayHeight}x${displayWidth}")
                     if (isLandscape) {
                         append(" 横向")
                     } else {
