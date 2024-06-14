@@ -104,12 +104,6 @@ class FragmentNav : Fragment(), View.OnClickListener {
                     startActivity(intent)
                     return
                 }
-                R.id.nav_img -> {
-                        val intent = Intent(context, ActivityImg::class.java)
-                        startActivity(intent)
-                    
-                    return
-                }
                 R.id.nav_battery_stats -> {
                     val intent = Intent(context, ActivityPowerUtilization::class.java)
                     startActivity(intent)
@@ -120,23 +114,8 @@ class FragmentNav : Fragment(), View.OnClickListener {
                     startActivity(intent)
                     return
                 }
-                R.id.nav_miui_thermal -> {
-                    val intent = Intent(context, ActivityMiuiThermal::class.java)
-                    startActivity(intent)
-                    return
-                }
                 R.id.nav_app_scene -> {
                     val intent = Intent(context, ActivityAppConfig2::class.java)
-                    startActivity(intent)
-                    return
-                }
-                R.id.nav_app_magisk -> {
-                    val intent = Intent(context, ActivityMagisk::class.java)
-                    startActivity(intent)
-                    return
-                }
-                R.id.nav_modules -> {
-                    val intent = Intent(context, ActivityModules::class.java)
                     startActivity(intent)
                     return
                 }
