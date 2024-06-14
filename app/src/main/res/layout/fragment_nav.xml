@@ -103,13 +103,6 @@
                 app:text="@string/menu_applictions" />
 
             <com.Sunshine.ui.NavItem
-                android:id="@+id/nav_img"
-                style="@style/nav_item_wrap_right"
-                android:tag="root"
-                app:drawable="@drawable/ic_menu_img"
-                app:text="@string/menu_img" />
-
-            <com.Sunshine.ui.NavItem
                 android:id="@+id/nav_additional"
                 style="@style/nav_item_wrap"
                 android:tag="root"
@@ -122,26 +115,6 @@
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_shell"
                 app:text="@string/menu_additional" />
-
-            <com.Sunshine.ui.NavItem
-                android:id="@+id/nav_app_magisk"
-                style="@style/nav_item_wrap"
-                android:tag="root"
-                app:drawable="@drawable/ic_menu_addon"
-                app:text="@string/menu_app_magisk" />
-
-            <com.Sunshine.ui.NavItem
-                android:id="@+id/nav_miui_thermal"
-                style="@style/nav_item_wrap_right"
-                app:drawable="@drawable/ic_menu_hot"
-                app:text="@string/menu_miui_thermal" />
-
-            <com.Sunshine.ui.NavItem
-                android:id="@+id/nav_modules"
-                style="@style/nav_item_wrap"
-                android:tag="root"
-                app:drawable="@drawable/ic_menu_magisk"
-                app:text="@string/menu_modules" />
 
          <com.Sunshine.ui.NavItem
                 android:id="@+id/nav_freeze"
