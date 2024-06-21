@@ -1,5 +1,6 @@
 package com.Sunshine.library.shell
 
+import android.content.Context
 import com.Sunshine.common.shell.KeepShell
 import com.Sunshine.common.shell.KeepShellPublic
 import com.Sunshine.common.shell.RootFile.fileExists
@@ -37,15 +38,15 @@ class FpsUtils(private val keepShell: KeepShell = KeepShellPublic.secondaryKeepS
                         Thread(Runnable {
                             try {
                                 keepShell.doCmdSync("find /sys -name measured_fps 2>/dev/null")
-                                        .trim { it <= ' ' }.split("\n").filter { it.contains("crtc") }.min()?.run {
-                                            fpsFilePath = this
-                                        }
+                                    .trim { it <= ' ' }.split("\n").filter { it.contains("crtc") }.min()?.run {
+                                        fpsFilePath = this
+                                    }
 
                                 if (fpsFilePath == null || fpsFilePath == "") {
                                     keepShell.doCmdSync("find /sys -name fps 2>/dev/null")
-                                            .trim { it <= ' ' }.split("\n").filter { it.contains("crtc") }.min()?.run {
-                                                fpsFilePath = this
-                                            }
+                                        .trim { it <= ' ' }.split("\n").filter { it.contains("crtc") }.min()?.run {
+                                            fpsFilePath = this
+                                        }
                                 }
                                 if (fpsFilePath == null) {
                                     fpsFilePath = ""
@@ -85,7 +86,7 @@ class FpsUtils(private val keepShell: KeepShell = KeepShellPublic.secondaryKeepS
             // 如果所有其他路径都不可用，执行 dumpsys SurfaceFlinger --latency 命令
             if (fpsFilePath.isNullOrEmpty() && fpsCommand2.isNotEmpty()) {
                 try {
-                    val packageName = getPackageName()  // 自动获取包名
+                    val packageName = getPackageName(context)  // 自动获取包名
                     val dumpsysCmd = "dumpsys SurfaceFlinger --latency $packageName"
                     return keepShell.doCmdSync(dumpsysCmd).trim()
                 } catch (ex: Exception) {
@@ -108,9 +109,7 @@ class FpsUtils(private val keepShell: KeepShell = KeepShellPublic.secondaryKeepS
         }
 
     // 自动获取包名的方法
-    private fun getPackageName(): String {
-        val context = android.content.Context()
-        val packageName = context.getPackageName()
-        return packageName
+    private fun getPackageName(context: Context): String {
+        return context.packageName
     }
 }
