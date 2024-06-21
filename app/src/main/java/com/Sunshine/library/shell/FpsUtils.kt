@@ -82,6 +82,16 @@ class FpsUtils(private val keepShell: KeepShell = KeepShellPublic.secondaryKeepS
                     }
                 }
             }
+            // 如果所有其他路径都不可用，执行 dumpsys SurfaceFlinger --latency 命令
+            if (fpsFilePath.isNullOrEmpty() && fpsCommand2.isNotEmpty()) {
+                try {
+                    val packageName = getPackageName()  // 自动获取包名
+                    val dumpsysCmd = "dumpsys SurfaceFlinger --latency $packageName"
+                    return keepShell.doCmdSync(dumpsysCmd).trim()
+                } catch (ex: Exception) {
+                    return null
+                }
+            }
             return null
         }
 
@@ -91,9 +101,16 @@ class FpsUtils(private val keepShell: KeepShell = KeepShellPublic.secondaryKeepS
             if (fpsStr != null) {
                 try {
                     return fpsStr.toFloat()
-                } catch (ex: java.lang.Exception) {
+                } catch (ex: Exception) {
                 }
             }
             return -0f
         }
+
+    // 自动获取包名的方法
+    private fun getPackageName(): String {
+        val context = android.content.Context()
+        val packageName = context.getPackageName()
+        return packageName
+    }
 }
